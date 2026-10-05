@@ -19,8 +19,9 @@
 </head>
 
 <body>
-    <!-- Perfil -->
-    <header class="profile">
+<div class="landing-page">
+        <!-- Perfil -->
+        <header class="profile">
         <div class="container profile__content">
             <div class="profile__image-container">
                 <img
@@ -40,15 +41,65 @@
                 </p>
 
                 <p class="profile__description">
-                    Desenvolvo aplicações web e sistemas. Este portfólio reúne meus projetos pessoais, acadêmicos
-                    e profissionais.
+                    Desenvolvedor web com foco na criação de aplicações e sistemas. Aqui apresento projetos
+                    pessoais, acadêmicos e profissionais.
                 </p>
             </div>
         </div>
     </header>
 
-    <!-- Projetos -->
     <main class="main">
+        <section class="informations">
+            <div class="container">
+                <article class="informations__card" aria-labelledby="informations-title">
+                    <h2 class="informations__title" id="informations-title">
+                        Informações
+                    </h2>
+
+                    <div class="informations__grid">
+                        <section class="informations__group informations__group--education">
+                            <h3 class="informations__subtitle">
+                                Formação
+                            </h3>
+                            <p class="informations__degree">
+                                Engenharia da Computação — UTFPR
+                            </p>
+                            <p class="informations__period">
+                                2021 – Em andamento
+                            </p>
+                        </section>
+
+                        <section class="informations__group">
+                            <h3 class="informations__subtitle">
+                                Competências técnicas
+                            </h3>
+                            <ul class="informations__list">
+                                <li><strong>Desenvolvimento de software:</strong> JavaScript, TypeScript, Python, React e Node.js</li>
+                                <li><strong>Análise e tratamento de dados</strong> com Python</li>
+                                <li>Integração entre sistemas e desenvolvimento de aplicações web</li>
+                                <li><strong>APIs e integração:</strong> REST, JWT e CORS</li>
+                                <li><strong>Testes e qualidade:</strong> Jest e identificação/correção de erros</li>
+                                <li><strong>Bancos de dados:</strong> MySQL e PostgreSQL</li>
+                                <li><strong>Versionamento e colaboração:</strong> Git e GitHub</li>
+                            </ul>
+                        </section>
+
+                        <section class="informations__group">
+                            <h3 class="informations__subtitle">
+                                Competências profissionais
+                            </h3>
+                            <ul class="informations__list">
+                                <li>Capacidade analítica e resolução de problemas</li>
+                                <li>Organização e atenção aos detalhes</li>
+                                <li>Facilidade para aprender novas ferramentas e processos</li>
+                                <li>Raciocínio lógico e abordagem estruturada para problemas</li>
+                                <li>Trabalho em equipe e comunicação técnica</li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </section>
         <section class="projects">
             <div class="container">
                 <h2 class="projects__title">
@@ -57,39 +108,38 @@
 
                 <div class="projects__list">
 
-                    <!-- Projeto 1 -->
+                    <!-- Chatbot -->
                     <article class="project">
                         <img
-                            src="imagens/cartaDigital.png"
-                            alt="Imagem de projeto carta Digital"
+                            src="imagens/chatBot.png"
+                            alt="Captura de tela do projeto Chatbot"
                             class="project__image"
                         >
 
                         <div class="project__content">
                             <div class="project__information">
                                 <h3 class="project__title">
-                                    Carta Digital
+                                    Chatbot
                                 </h3>
 
                                 <p class="project__description">
-                                    Este é um projeto pessoal desenvolvido com Claude Code, uma ferramenta de inteligência artificial. Com ela, foi possível desenvolver em poucas semanas um sistema que permite usuários criar cartas e compartilhar elas com links únicos.
+                                    Aplicação de chat desenvolvida com Next.js e integrada à inteligência artificial Google Gemini.
                                 </p>
 
                                 <ul class="project__technologies">
                                     <li>Next.js</li>
-                                    <li>PostgreSQL</li>
-                                    <li>Supabase</li>
-                                    <li>Vercel</li>
+                                    <li>React</li>
+                                    <li>Google Gemini</li>
                                 </ul>
                             </div>
 
                             <div class="project__links">
                                 <a
-                                    href="https://www.cartadigital.me/"
+                                    href="https://github.com/tiagomsouzac/chatbot"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    Ver projeto
-                                </a>
+                                    Ver no GitHub
                                 </a>
                             </div>
                         </div>
@@ -253,5 +303,6 @@
             </nav>
         </div>
     </footer>
+</div>
 </body>
 </html>
